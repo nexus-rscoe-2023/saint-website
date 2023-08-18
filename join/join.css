@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --Theme-color1: #ff0066;
+    --Theme-color2: #ff3300;
+}
+
+.join-main-section {
+    display: flex;
+    /* justify-content: space-between; */
+    place-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.join-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+
+    margin: 4rem 0;
+}
+
+.join-banner {
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.join-banner img {
+    width: 70%;
+    min-width: 300px;
+}
+
+.join-description {
+    text-align: center;
+}
+
+.join-form-container{
+    display: flex;
+    place-content: center;
+}
+
+
+.join-text {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.join-form {
+    background-color: black;
+    width: 50vw;
+    max-width: 50%;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.input {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input:last-child {
+    margin-bottom: 0;
+}
+
+.input label {
+    margin-bottom: 0.5rem;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+.input input {
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.0em;
+    padding: 4px;
+}
+
+.input input:focus {
+    border-color: var(--Theme-color1);
+}
+
+.join-main-section .join-all .join-des {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    margin: 1rem 2rem 1rem 0;
+}
+
+@media (max-width: 900px) {
+    .join-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .join-form {
+        width: 80vw;
+        max-width: inherit;
+        margin: 2rem 0;
+        ;
+        padding: 15px;
+        border-radius: 0.5rem;
+    }
+
+    .input label {
+        margin-bottom: 0.3rem;
+    }
+
+    .input input {
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .discord-up,
+    .github-up {
+        display: none;
+    }
+
+    .main-header {
+        justify-content: center;
+    }
+
+    .join-text {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1rem
+    }
+
+}
+
+/* input {
+    text-align: center;
+} */

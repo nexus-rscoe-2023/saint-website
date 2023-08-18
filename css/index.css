@@ -1,0 +1,36 @@
+.main-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center; /*space-between->column*/
+    flex-direction: column;   
+    flex-grow: 1;
+}
+
+.main-content .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.main-content .intro-text {
+    padding: 1.5rem;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 30%);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 0;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    .main-content .img-wrapper {
+        display: none;
+    }
+
+    .main-content {
+        justify-content: center;
+    }
+}
